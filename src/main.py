@@ -27,9 +27,3 @@ def read_items():
 def read_item(item_id: int):
     """Read a specific item by ID."""
     return {"item_id": item_id}
-
-
-@app.get("/wrong-path")
-def read_wrong_path():
-    """Read the wrong path endpoint."""
-    return {"error": "Path not found"}
